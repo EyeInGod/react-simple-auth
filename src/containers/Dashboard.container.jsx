@@ -6,6 +6,7 @@ import { logout } from "../reducers/auth.reducer";
 export const DashboardContainer = () => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
+  
   const { isLoggedin, token } = useSelector((state) => state.auth);
 
   const handleLogout = () => dispatch(logout());
@@ -17,7 +18,7 @@ export const DashboardContainer = () => {
   return (
     <div className="w-full h-[100vh] flex flex-col justify-center items-center gap-5">
       <div className="text-[40px] text-black font-bold">
-        Hi {(token && token.userName) || "Micus"}
+        Hi {(token && token.userName) || "Marcus"}
       </div>
 
       <button

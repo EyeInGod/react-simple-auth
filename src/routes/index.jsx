@@ -5,8 +5,8 @@ import DashboardPage from "../pages/Dashboard";
 
 const MainRoute = () => (
   <Routes>
-    <Route path="/login" element={<LoginPage />} />
     <Route path="/" element={<DashboardPage />} />
+    <Route path="/login" element={<LoginPage />} />
   </Routes>
 );
 
